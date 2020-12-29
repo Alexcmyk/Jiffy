@@ -179,3 +179,39 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+
+input {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  padding: 0;
+  outline: none;
+  text-align: center;
+  font-size: 72px;
+}
+
+.top,
+.middle,
+.indicators {
+  text-align: center;
+  position: relative;
+}
+
+input:focus {
+  outline: 1px dotted #fff;
+}
+
+input::placeholder {
+  color: #323232;
+}
+
+.search-clear,
+.spinner {
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.search-clear {
+  cursor: pointer;
+}
