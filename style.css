@@ -215,3 +215,32 @@ input::placeholder {
 .search-clear {
   cursor: pointer;
 }
+
+.grid {
+  display: grid;
+  place-items: center;
+}
+
+.video,
+.full-area {
+  grid-area: 1/1;
+}
+
+.video {
+  display: block;
+  max-width: 500px;
+}
+
+.search-hint {
+  color: #636363;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.show-hint .search-hint {
+  opacity: 1;
+}
+
+.white {
+  color: #fff;
+}
